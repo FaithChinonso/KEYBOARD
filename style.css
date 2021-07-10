@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 12px;
+}
+body {
+    background-color: rgb(119, 115, 115);
+    background-image: url('img/bcg1.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container {
+    text-align: center;
+    background-color: rgb(46, 20, 20, 0.2);
+    height: 60%;
+    width: 80%;
+    border-top: 1px solid rgba(7, 7, 7, 0.5);
+    box-shadow: 16px 16px 50px rgb(119, 8, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.title h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px rgb(245, 74, 7);
+}
+.keys {
+    display: flex;
+    box-shadow: 16px 16px 50px rgb(61, 7, 7);
+    border-top: 1px solid rgba(7, 7, 7, 0.5);
+
+
+}
+button {
+    padding: 3rem .8rem;
+    font-size: 1.5rem;
+    
+}
+button:nth-of-type(even) {
+    background-color: black;
+    color: white;
+}
+button:focus {
+    outline: none;
+    transform: scale(.95);
+}
+button:active {
+    transform: scale(.95);
+    box-shadow: 1px 1px 5px 5px orangered;
+}
+button.activated {
+    transform: scale(.95);
+    box-shadow: 1px 1px 5px 5px orangered;
+
+}
+@media (min-width:700px) {
+    html {
+        font-size: 16px;
+    }
+    .container {
+        height: 50%;
+        width: 70%;
+
+    }
+    .keys {
+        padding: 3rem 5rem;
+    }
+}
